@@ -19,7 +19,7 @@ var bio = {
     "twitter": "tom",
     "location": "L.A.",
   },
-  "welcome_message": "Hello my friend!",
+  "welcomeMessage": "Hello my friend!",
   "skills": [ "C++", "Java", "Python"],
   "biopic": "images/fry.jpg",
 
@@ -42,7 +42,7 @@ var bio = {
     var formmattedPic = HTMLbioPic.replace( "%data%", bio.biopic );
     $("#header").append( formmattedPic );
 
-    var formattedWelcomMsg = HTMLwelcomeMsg.replace( "%data%", bio.welcome_message );
+    var formattedWelcomMsg = HTMLwelcomeMsg.replace( "%data%", bio.welcomeMessage );
     $("#header").append( formattedWelcomMsg );
 
     $("#header").append( HTMLskillsStart );
