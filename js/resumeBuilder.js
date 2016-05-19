@@ -189,7 +189,7 @@ var education = {
       formattedLoc = HTMLschoolLocation.replace( "%data%", education.schools[i].location );
       $(".education-entry:last").append( formattedLoc );
 
-      for( var mj in education.schools[i].majors ) {
+      for( var mj = 0; mj < education.schools[i].majors.length; mj++ ) {
         formattedMajor = HTMLschoolMajor.replace( "%data%", education.schools[i].majors[mj] );
         $(".education-entry:last").append( formattedMajor );
       }
