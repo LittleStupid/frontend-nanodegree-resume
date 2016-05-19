@@ -102,7 +102,7 @@ var work = {
 work.display();
 
 var projects = {
-  "prjcts": [
+  "projects": [
     {
       "title": "Company's website",
       "dates": "2001-2002",
@@ -118,20 +118,20 @@ var projects = {
   ],
 
   "display": function() {
-    for( var i = 0; i < projects.prjcts.length; i++ ) {
+    for( var i = 0; i < projects.projects.length; i++ ) {
       $("#projects").append( HTMLprojectStart );
 
-      var formattedTitle = HTMLprojectTitle.replace( "%data%", projects.prjcts[i].title );
+      var formattedTitle = HTMLprojectTitle.replace( "%data%", projects.projects[i].title );
       $(".project-entry:last").append( formattedTitle );
 
-      var formattedDates = HTMLprojectDates.replace( "%data%", projects.prjcts[i].dates );
+      var formattedDates = HTMLprojectDates.replace( "%data%", projects.projects[i].dates );
       $(".project-entry:last").append( formattedDates );
 
-      var formattedDescription = HTMLprojectDescription.replace( "%data%", projects.prjcts[i].description );
+      var formattedDescription = HTMLprojectDescription.replace( "%data%", projects.projects[i].description );
       $(".project-entry:last").append( formattedDescription );
 
-      for( var j = 0; j < projects.prjcts[i].images.length; j++ ) {
-        var formattedImg = HTMLprojectImage.replace( "%data%", projects.prjcts[i].images[j] );
+      for( var j = 0; j < projects.projects[i].images.length; j++ ) {
+        var formattedImg = HTMLprojectImage.replace( "%data%", projects.projects[i].images[j] );
         $(".project-entry:last").append( formattedImg );
       }
     }
