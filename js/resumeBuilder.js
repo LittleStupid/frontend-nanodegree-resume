@@ -1,13 +1,18 @@
 /*
 This is empty on purpose! Your code to build the resume will go here.
  */
-var formattedName = HTMLheaderName.replace( "%data%", "Tom");
+ function displayHead() {
+   var formattedName = HTMLheaderName.replace( "%data%", "Tom");
 
-var role = "Web Developer";
-var formattedRole = HTMLheaderRole.replace( "%data%", role );
+   var role = "Web Developer";
+   var formattedRole = HTMLheaderRole.replace( "%data%", role );
 
-$("#header").prepend( formattedRole );
-$("#header").prepend( formattedName );
+   $("#header").prepend( formattedRole );
+   $("#header").prepend( formattedName );
+ }
+
+ displayHead();
+
 
 var bio = {
   "name": "Tom",
