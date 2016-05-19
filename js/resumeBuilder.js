@@ -25,19 +25,19 @@ var bio = {
 
   "display": function() {
     var formattedMobile = HTMLmobile.replace( "%data%", bio.contacts.mobile );
-    $("#topContacts").append( formattedMobile );
+    $("#footerContacts, #topContacts").append(formattedMobile);
 
     var formattedEmail = HTMLemail.replace( "%data%", bio.contacts.email );
-    $("#topContacts").append( formattedEmail );
+    $("#footerContacts, #topContacts").append( formattedEmail );
 
     var formattedGitUrl = HTMLgithub.replace( "%data%", bio.contacts.github );
-    $("#topContacts").append( formattedGitUrl );
+    $("#footerContacts, #topContacts").append( formattedGitUrl );
 
     var formattedTwitter = HTMLtwitter.replace( "%data%", bio.contacts.twitter );
-    $("#topContacts").append( formattedTwitter );
+    $("#footerContacts, #topContacts").append( formattedTwitter );
 
     var formattedLoc = HTMLlocation.replace( "%data%", bio.contacts.location );
-    $("#topContacts").append( formattedLoc );
+    $("#footerContacts, #topContacts").append( formattedLoc );
 
     var formmattedPic = HTMLbioPic.replace( "%data%", bio.biopic );
     $("#header").append( formmattedPic );
